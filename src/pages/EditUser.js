@@ -24,7 +24,6 @@ const EditUser = () => {
 
         if (snapshot.exists()) {
           setUser({ ...snapshot.val()[id] }); 
-          toast.error("User not found");
         }
       } catch (error) {
         toast.error("Error fetching user");
